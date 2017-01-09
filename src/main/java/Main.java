@@ -8,5 +8,8 @@ public class Main {
         String url = "https://www.zhihu.com";
         // 调用WebsiteSourceCode().getWebsiteSourceCode()方法，返回目标网页的源代码(String)；
         System.out.println(new WebsiteSourceCode().getWebsiteSourceCode(url));
+
+        String fileLocation = "C:\\Users\\Public";
+        new WebsiteSourceCode().getWebsiteSourceCode(url, fileLocation);
     }
 }
