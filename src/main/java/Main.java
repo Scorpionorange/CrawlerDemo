@@ -5,11 +5,12 @@ public class Main {
     public static void main(String[] args){
 
         // 定义即将访问的链接
-        String url = "https://www.zhihu.com";
+        String url = "https://zhuanlan.zhihu.com/p/25070516";
         // 调用WebsiteSourceCode().getWebsiteSourceCode()方法，返回目标网页的源代码(String)；
-        System.out.println(new WebsiteSourceCode().getWebsiteSourceCode(url));
+        //System.out.println(new WebsiteSourceCode().getWebsiteSourceCode(url));
 
-        String fileLocation = "C:\\Users\\Public";
-        new WebsiteSourceCode().getWebsiteSourceCode(url, fileLocation);
+        String filePath = "C:\\迅雷下载";
+        String fileName = "Test.txt";
+        new WebsiteSourceCode().getWebsiteSourceCode(url, filePath, fileName);
     }
 }
